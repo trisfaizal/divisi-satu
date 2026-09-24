@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Touch Swipe — disabled on mobile portrait (scroll model)
+        // Touch Swipe - disabled on mobile portrait (scroll model)
         let touchStartX = 0;
         let touchEndX = 0;
 

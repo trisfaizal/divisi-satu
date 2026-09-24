@@ -1,11 +1,11 @@
 /* ============================================================
-   KOMITKABE — DIVISION 01 // MEMBERSHIP & GOVERNANCE
+   KOMITKABE - DIVISION 01 // MEMBERSHIP & GOVERNANCE
    Visual system adapted from KOMITKABE BERDAMPAK presentation.
    Primary theme: dark technical editorial.
    ============================================================ */
 
 :root {
-    /* Colors — Dark Technical Editorial (adapted from source dark theme) */
+    /* Colors - Dark Technical Editorial (adapted from source dark theme) */
     --bg-color: #07111F;
     --bg-elevated: #0F1E33;
     --heading: #F5F8FC;
@@ -623,7 +623,7 @@ p.body.muted { color: var(--text-muted); }
 
 .cover-meta .meta-block .meta-value.small { font-size: 0.95rem; font-weight: 500; }
 
-/* PEOPLE — editorial name list (no box, no card, no avatar) */
+/* PEOPLE - editorial name list (no box, no card, no avatar) */
 .people-list {
     list-style: none;
     padding: 0;
@@ -674,7 +674,7 @@ p.body.muted { color: var(--text-muted); }
 .stack-md { display: flex; flex-direction: column; gap: var(--space-md); }
 .stack-sm { display: flex; flex-direction: column; gap: var(--space-sm); }
 
-/* Output block — the "OUTPUT:" callout used on program slides */
+/* Output block - the "OUTPUT:" callout used on program slides */
 .output-block {
     border-left: 2px solid var(--cyan-accent);
     padding-left: var(--space-md);
@@ -689,7 +689,7 @@ p.body.muted { color: var(--text-muted); }
 }
 
 /* -----------------------------------------
-   PROGRAM LIST (Slide 3) — oversized numerals
+   PROGRAM LIST (Slide 3) - oversized numerals
 ----------------------------------------- */
 .program-list {
     display: grid;
@@ -733,7 +733,7 @@ p.body.muted { color: var(--text-muted); }
 
 /* -----------------------------------------
    FLOW DIAGRAMS (vertical & horizontal)
-   Technical/editorial connectors — no cards.
+   Technical/editorial connectors - no cards.
 ----------------------------------------- */
 .flow-vertical {
     display: flex;
@@ -1186,7 +1186,7 @@ p.body.muted { color: var(--text-muted); }
 }
 
 /* =============================================
-   RESPONSIVE — Tablet / smaller desktop (1200px)
+   RESPONSIVE - Tablet / smaller desktop (1200px)
 ============================================= */
 @media (max-width: 1200px) {
     :root {
@@ -1214,7 +1214,7 @@ p.body.muted { color: var(--text-muted); }
     .program-num { font-size: 2.25rem; }
     .slide-numeral { font-size: 6rem; }
 
-    /* Slide 11 — comparison must stay within a 720px viewport.
+    /* Slide 11 - comparison must stay within a 720px viewport.
        Tighten vertical rhythm and stop forcing the diagram to the bottom. */
     #slide-11 .slide-content { justify-content: flex-start; }
     #slide-11 .slide-title { font-size: 1.9rem !important; margin-bottom: 0.6rem !important; }
@@ -1240,7 +1240,7 @@ p.body.muted { color: var(--text-muted); }
 }
 
 /* =============================================
-   RESPONSIVE — Mobile / Tablet Portrait (768px)
+   RESPONSIVE - Mobile / Tablet Portrait (768px)
    Switch from fixed-canvas to scrollable document.
 ============================================= */
 @media (max-width: 768px) {
