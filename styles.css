@@ -1070,6 +1070,385 @@ p.body.muted { color: var(--text-muted); }
 }
 
 /* -----------------------------------------
+   CORE DIAGRAM (Slide 12) - center node + satellites
+   Technical/editorial, thin rules, no cards.
+----------------------------------------- */
+.core-diagram {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: var(--space-lg) var(--space-xl);
+    width: 100%;
+    max-width: 1000px;
+    margin: var(--space-md) auto 0;
+}
+
+.core-node {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--heading-sec);
+    white-space: nowrap;
+}
+
+.core-top { grid-column: 2; grid-row: 1; }
+.core-left { grid-column: 1; grid-row: 2; justify-self: end; }
+.core-center { grid-column: 2; grid-row: 2; }
+.core-right { grid-column: 3; grid-row: 2; justify-self: start; }
+.core-bottom-mid { grid-column: 2; grid-row: 3; }
+
+.core-center .core-mark {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--heading);
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--blue-primary);
+    position: relative;
+}
+
+/* Stack the two bottom satellites in one cell */
+.core-bottom-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* -----------------------------------------
+   FOUNDATION STACK (Slide 14) - keyword + plus
+----------------------------------------- */
+.foundation-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.foundation-stack .fnd-word {
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    color: var(--heading);
+}
+
+.foundation-stack .fnd-plus {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--blue-primary);
+    line-height: 1;
+    padding-left: 0.15em;
+}
+
+/* -----------------------------------------
+   MINI STRUCTURE (Slide 11) - compact org flow
+----------------------------------------- */
+.mini-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: var(--space-md);
+}
+
+.mini-structure .mini-node {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--heading);
+    padding: 0.3rem 0;
+}
+
+.mini-structure .mini-arrow {
+    width: 1px;
+    height: 1.3rem;
+    background: var(--line-color);
+    margin-left: 0.5rem;
+}
+
+.mini-structure .mini-aside {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+    padding-left: 1rem;
+    border-left: 1px dashed var(--line-color);
+}
+
+/* -----------------------------------------
+   LEGAL-ENTITY ILLUSTRATION (Slide 10)
+   Two structures side by side + authority row.
+----------------------------------------- */
+.legal-forms {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0;
+    width: 100%;
+    margin-top: var(--space-sm);
+}
+
+.legal-form-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--space-xl);
+}
+
+.legal-form-col:first-child { padding-left: 0; }
+.legal-form-col:last-child { padding-right: 0; }
+
+.legal-form-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--heading);
+    margin-bottom: var(--space-md);
+}
+
+.legal-struct {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.legal-struct .ls-node {
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--heading);
+    padding: 0.25rem 0;
+}
+
+.legal-struct .ls-node.terminal { color: var(--cyan-accent); }
+
+.legal-struct .ls-arrow {
+    width: 1px;
+    height: 1.2rem;
+    background: var(--line-color);
+    margin-left: 0.5rem;
+}
+
+.legal-struct .ls-pair {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+}
+
+.legal-struct .ls-pair .ls-plus {
+    color: var(--blue-primary);
+    font-weight: 300;
+}
+
+.authority-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+    row-gap: 0.6rem;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--line-soft);
+}
+
+.authority-row .auth-item {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    position: relative;
+    padding-left: 1.1rem;
+}
+
+.authority-row .auth-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 7px;
+    height: 1px;
+    background: var(--blue-primary);
+}
+
+/* -----------------------------------------
+   PROGRAM ROADMAP (Slide 11)
+   Six programs across a 2026-2029 timeline.
+----------------------------------------- */
+.roadmap {
+    width: 100%;
+    margin-top: var(--space-md);
+}
+
+.roadmap-scale {
+    display: grid;
+    grid-template-columns: 240px repeat(4, 1fr);
+    align-items: end;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line-color);
+    margin-bottom: 0.4rem;
+}
+
+.roadmap-scale .rm-corner {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+}
+
+.roadmap-scale .rm-year {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--heading-sec);
+    position: relative;
+}
+
+/* Faint year gridlines behind the timeline field */
+.roadmap-field {
+    position: relative;
+}
+
+.roadmap-field::before,
+.roadmap-field::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--line-soft);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* two interior year separators at 1/3 and 2/3 of the stream field.
+   The stream field starts after the 240px label column. */
+.roadmap-field::before { left: calc(240px + (100% - 240px) * 0.3333); }
+.roadmap-field::after  { left: calc(240px + (100% - 240px) * 0.6667); }
+
+.roadmap-row {
+    display: grid;
+    grid-template-columns: 240px repeat(4, 1fr);
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--line-soft);
+    position: relative;
+    z-index: 1;
+}
+
+.roadmap-row:last-child { border-bottom: none; }
+
+.roadmap-label {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    padding-right: var(--space-md);
+}
+
+.roadmap-label .rm-num {
+    font-size: 1rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(59, 130, 246, 0.6);
+    letter-spacing: -0.02em;
+    flex: 0 0 auto;
+}
+
+.roadmap-label .rm-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+    line-height: 1.25;
+}
+
+/* Stream field: full 2026-2029 track. Bars positioned by inline left/width. */
+.roadmap-stream {
+    grid-column: 2 / 6;
+    position: relative;
+    height: 22px;
+}
+
+/* faint baseline track spanning the whole period */
+.roadmap-stream::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: rgba(41, 70, 101, 0.35);
+}
+
+.roadmap-stream .rm-bar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background: linear-gradient(to right, var(--blue-primary), var(--cyan-accent));
+}
+
+/* end milestone dot */
+.roadmap-stream .rm-bar::after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--cyan-accent);
+}
+
+/* start milestone dot (positioned inline via left) */
+.roadmap-stream .rm-start {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--blue-primary);
+    z-index: 2;
+}
+
+/* start phase label sitting just above the start dot */
+.roadmap-stream .rm-phase {
+    position: absolute;
+    top: -3px;
+    transform: translateX(-50%);
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+/* Legacy span helpers (kept harmless; positioning now via inline styles) */
+.span-full { left: 0%; width: 100%; }
+.span-from-2 { left: 25%; width: 75%; }
+.span-from-3 { left: 50%; width: 50%; }
+.span-1-2 { left: 0%; width: 50%; }
+
+.roadmap-note {
+    margin-top: var(--space-md);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--text-faint);
+    font-style: italic;
+}
+
+/* -----------------------------------------
    FOOTER NAVIGATION + PROGRESS
 ----------------------------------------- */
 .progress-track {
