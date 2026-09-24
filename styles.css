@@ -360,6 +360,18 @@ p.body {
 
 p.body.muted { color: var(--text-muted); }
 
+/* Program description - visible scope statement on program slides.
+   Editorial (not a card), reuses body typography, sits below the title
+   and above Focus/Flow/Output. States WHAT the program does. */
+.program-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-primary);
+    max-width: 44ch;
+    margin-top: 1rem;
+}
+
 .lead-statement {
     font-size: 2rem;
     font-weight: 400;
