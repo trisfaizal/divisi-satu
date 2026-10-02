@@ -558,13 +558,13 @@
         <section class="slide" id="slide-9">
             <style>
                 #slide-9::before {
-                    background-position: right center;
+                    background-position: right bottom;
                     background-size: 110%;
-                    opacity: 0.15;
+                    opacity: 0.25;
                 }
                 #slide-9::after {
                     content: ''; position: absolute; inset: 0;
-                    background: linear-gradient(to bottom, var(--bg-color) 10%, rgba(253, 252, 248, 0.9) 70%, var(--bg-color) 100%);
+                    background: radial-gradient(ellipse at center, var(--bg-color) 50%, rgba(253, 252, 248, 0.85) 75%, transparent 100%);
                     z-index: 0; pointer-events: none;
                 }
             </style>
@@ -1093,6 +1093,24 @@
 
         <!-- SLIDE 17: ROADMAP -->
         <section class="slide" id="slide-17">
+            <style>
+                #slide-17::before {
+                    background-position: right bottom !important;
+                    background-size: 110% !important;
+                    opacity: 0.06 !important;
+                    filter: grayscale(80%) opacity(0.8) !important;
+                    mask-image: none !important;
+                    -webkit-mask-image: none !important;
+                }
+                #slide-17::after {
+                    content: '' !important;
+                    position: absolute !important;
+                    inset: 0 !important;
+                    background: radial-gradient(ellipse at center, var(--bg-color) 50%, rgba(253, 252, 248, 0.95) 80%, transparent 100%) !important;
+                    z-index: 0 !important;
+                    pointer-events: none !important;
+                }
+            </style>
             <div class="slide-numeral">17</div>
             <div class="slide-content">
                 <div class="anim-elem anim-delay-1">
