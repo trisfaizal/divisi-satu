@@ -103,59 +103,78 @@
 
         <!-- SLIDE 03: ARAH DIVISI 01 -->
         <section class="slide" id="slide-3">
+            <style>
+                #slide-3::before {
+                    background-position: 110% 80%;
+                    background-size: 130%;
+                    opacity: 0.25;
+                }
+                #slide-3::after {
+                    content: ''; position: absolute; inset: 0;
+                    background: linear-gradient(105deg, var(--bg-color) 0%, var(--bg-color) 45%, rgba(253, 252, 248, 0.85) 65%, rgba(253, 252, 248, 0.1) 100%);
+                    z-index: 0; pointer-events: none;
+                }
+            </style>
             <div class="slide-numeral">03</div>
-            <div class="slide-content">
-                <div class="anim-elem anim-delay-1">
-                    <div class="slide-id">
-                        <span>FOUNDATION</span>
-                    </div>
-                    <h2 class="slide-title">Arah Divisi 01</h2>
-                    <p class="program-desc" style="margin-bottom: var(--space-xl);">Tiga pilar utama yang menjadi fondasi pengembangan keanggotaan dan tata kelola organisasi KOMITKABE.</p>
+            <div class="slide-content" style="flex-direction: row; align-items: center; justify-content: space-between; padding-top: 8vh; padding-bottom: 8vh; padding-left: 5%; padding-right: 5%; gap: 5%;">
+                
+                <!-- LEFT SIDE: TITLE BLOCK -->
+                <div class="anim-elem anim-delay-1" style="flex: 0 0 38%; max-width: 450px; position: relative; z-index: 1;">
+                    <div class="slide-id" style="justify-content: flex-start; padding-left: 0;"><span>FOUNDATION</span></div>
+                    <h2 class="slide-title tight" style="margin-bottom: 2rem; text-align: left; font-size: 2.8rem;">Arah Divisi 01</h2>
+                    <p style="font-size: 1.15rem; font-weight: 500; color: var(--text-secondary); line-height: 1.6; text-align: left; margin: 0;">
+                        Tiga pilar utama yang menjadi fondasi pengembangan keanggotaan dan tata kelola organisasi KOMITKABE.
+                    </p>
                 </div>
-                <div class="anim-elem anim-delay-2" style="width: 100%; max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+
+                <!-- RIGHT SIDE: TYPOGRAPHIC ARCHITECTURE -->
+                <div class="anim-elem anim-delay-2" style="flex: 0 0 57%; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 1;">
                     
-                    <!-- Top Level: The Three Typographic Pillars -->
-                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 4rem; width: 100%; text-align: center; align-items: start;">
-                        
-                        <!-- Pillar 1: Membership (Stronger) -->
-                        <div style="display: flex; flex-direction: column; align-items: center;">
-                            <div style="width: 32px; height: 3px; background: var(--blue-primary); margin-bottom: 1.5rem; border-radius: 2px;"></div>
-                            <div style="font-size: 0.75rem; font-weight: 800; color: var(--blue-primary); margin-bottom: 0.5rem; letter-spacing: 0.15em; text-transform: uppercase;">Core Pillar</div>
-                            <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--heading); margin-bottom: 1.5rem; letter-spacing: -0.02em;">MEMBERSHIP</h3>
-                            <p style="font-size: 1.05rem; margin: 0; line-height: 1.6; color: var(--text-primary); font-weight: 500;">Membangun sistem keanggotaan yang terstruktur, terverifikasi, dan mampu mengelola perjalanan anggota secara utuh.</p>
-                        </div>
-
-                        <!-- Pillar 2: Digital System -->
-                        <div style="display: flex; flex-direction: column; align-items: center; opacity: 0.9; transform: translateY(0.2rem);">
-                            <div style="width: 24px; height: 2px; background: var(--cyan-accent); margin-bottom: 1.5rem; border-radius: 2px;"></div>
-                            <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.5rem; letter-spacing: 0.15em; text-transform: uppercase;">Enablement</div>
-                            <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--heading); margin-bottom: 1.5rem; letter-spacing: -0.02em;">DIGITAL SYSTEM</h3>
-                            <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: var(--text-secondary);">Membangun shared digital capability untuk mendukung membership, kegiatan, administrasi, dan pencatatan aktivitas organisasi.</p>
-                        </div>
-
-                        <!-- Pillar 3: Governance -->
-                        <div style="display: flex; flex-direction: column; align-items: center; opacity: 0.9; transform: translateY(0.2rem);">
-                            <div style="width: 24px; height: 2px; background: var(--emerald-accent); margin-bottom: 1.5rem; border-radius: 2px;"></div>
-                            <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.5rem; letter-spacing: 0.15em; text-transform: uppercase;">Framework</div>
-                            <h3 style="font-size: 1.3rem; font-weight: 800; color: var(--heading); margin-bottom: 1.5rem; letter-spacing: -0.02em;">GOVERNANCE</h3>
-                            <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: var(--text-secondary);">Memperkuat tata kelola, aturan, kewenangan, akuntabilitas, dan mekanisme regenerasi organisasi.</p>
+                    <!-- 01 MEMBERSHIP (HERO PILLAR) -->
+                    <div style="display: grid; grid-template-columns: 4rem 1fr; gap: 1rem; align-items: start; padding-bottom: 2rem; margin-bottom: 2rem; border-bottom: 1px solid var(--line-color);">
+                        <div style="font-size: 3.5rem; font-weight: 200; color: var(--blue-primary); line-height: 0.8; letter-spacing: -0.05em;">01</div>
+                        <div>
+                            <div style="font-size: 0.75rem; font-weight: 800; color: var(--blue-primary); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;">Core Pillar</div>
+                            <h3 style="font-size: 2.2rem; font-weight: 800; color: var(--heading); margin: 0 0 0.75rem 0; letter-spacing: -0.02em; line-height: 1.1;">MEMBERSHIP</h3>
+                            <p style="font-size: 1.05rem; font-weight: 500; color: var(--text-primary); line-height: 1.6; margin: 0; max-width: 500px;">
+                                Membangun sistem keanggotaan yang terstruktur, terverifikasi, dan mampu mengelola perjalanan anggota secara utuh.
+                            </p>
                         </div>
                     </div>
-                    
-                    <!-- Structural Line Connections -->
-                    <div style="position: relative; width: 100%; height: 60px; margin-top: 1.5rem;">
-                        <div style="position: absolute; left: 16.66%; top: 0; width: 1px; height: 100%; background: var(--line-color);"></div>
-                        <div style="position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: var(--line-color);"></div>
-                        <div style="position: absolute; left: 83.33%; top: 0; width: 1px; height: 100%; background: var(--line-color);"></div>
+
+                    <!-- 02 & 03 ROW (SUPPORTING PILLARS) -->
+                    <div style="display: flex; gap: 2rem; padding-bottom: 2rem; margin-bottom: 1.5rem; border-bottom: 1px dashed rgba(0,0,0,0.1);">
                         
-                        <div style="position: absolute; left: 16.66%; top: 100%; width: 66.67%; height: 1px; background: var(--line-color);"></div>
+                        <!-- 02 DIGITAL SYSTEM -->
+                        <div class="anim-elem anim-delay-3" style="flex: 1; display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem; font-weight: 300; color: var(--cyan-accent); line-height: 0.85; letter-spacing: -0.05em;">02</div>
+                            <div>
+                                <div style="font-size: 0.65rem; font-weight: 700; color: var(--cyan-accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;">Enablement</div>
+                                <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--heading); margin: 0 0 0.75rem 0; letter-spacing: -0.02em;">DIGITAL SYSTEM</h3>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                                    Membangun shared digital capability untuk mendukung membership, kegiatan, administrasi, dan pencatatan aktivitas organisasi.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 03 GOVERNANCE -->
+                        <div class="anim-elem anim-delay-3" style="flex: 1; display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; align-items: start;">
+                            <div style="font-size: 2.5rem; font-weight: 300; color: var(--emerald-accent); line-height: 0.85; letter-spacing: -0.05em;">03</div>
+                            <div>
+                                <div style="font-size: 0.65rem; font-weight: 700; color: var(--emerald-accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.5rem;">Framework</div>
+                                <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--heading); margin: 0 0 0.75rem 0; letter-spacing: -0.02em;">GOVERNANCE</h3>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+                                    Memperkuat tata kelola, aturan, kewenangan, akuntabilitas, dan mekanisme regenerasi organisasi.
+                                </p>
+                            </div>
+                        </div>
                         
-                        <div style="position: absolute; left: 50%; top: 100%; width: 1px; height: 24px; background: var(--blue-primary);"></div>
                     </div>
-                    
-                    <!-- Foundation Anchor -->
-                    <div style="margin-top: 36px; text-align: center;">
-                        <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--heading); letter-spacing: 0.25em; text-transform: uppercase; margin: 0;">KOMITKABE<br>FOUNDATION</h4>
+
+                    <!-- FOUNDATION TEXT -->
+                    <div class="anim-elem anim-delay-4" style="text-align: left; padding-left: 4rem;">
+                        <div style="font-size: 0.75rem; font-weight: 800; color: var(--heading); letter-spacing: 0.15em; text-transform: uppercase;">KOMITKABE FOUNDATION</div>
+                        <div style="font-size: 0.65rem; font-weight: 600; color: var(--text-muted); letter-spacing: 0.1em; margin-top: 0.25rem;">MEMBERSHIP &bull; DIGITAL SYSTEM &bull; GOVERNANCE</div>
                     </div>
                     
                 </div>
@@ -205,43 +224,61 @@
 
         <!-- SLIDE 05: ARCHITECTURE -->
         <section class="slide" id="slide-5">
+            <style>
+                #slide-5::before {
+                    background-position: right center;
+                    background-size: 110%;
+                    opacity: 0.15;
+                }
+                #slide-5::after {
+                    content: ''; position: absolute; inset: 0;
+                    background: linear-gradient(to right, var(--bg-color) 45%, rgba(253, 252, 248, 0.85) 75%, transparent 100%);
+                    z-index: 0; pointer-events: none;
+                }
+            </style>
             <div class="slide-numeral">05</div>
             <div class="slide-content">
-                <div class="anim-elem anim-delay-1" style="text-align: center; margin-bottom: var(--space-lg);">
+                <div class="anim-elem anim-delay-1" style="text-align: center; margin-bottom: var(--space-lg); position: relative; z-index: 1;">
                     <div class="slide-id" style="justify-content: center;"><span>ARCHITECTURE</span></div>
                     <h2 class="slide-title tight">KOMITKABE Digital Platform</h2>
-                    <p class="program-desc" style="margin: 0 auto;">Bagaimana program digital Divisi 01 saling berhubungan.</p>
+                    <p class="program-desc" style="margin: 0 auto;"><strong>Centralized Data. Shared Services.</strong> Bagaimana program digital Divisi 01 saling berhubungan.</p>
                 </div>
                 
-                <div class="anim-elem anim-delay-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: start; transform: scale(0.95); transform-origin: top center;">
+                <div class="anim-elem anim-delay-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-xl); align-items: start; transform: scale(0.95); transform-origin: top center; position: relative; z-index: 1;">
                     <div>
-                        <div class="arch-box">
-                            <div class="micro-label" style="color: var(--cyan-accent);">Core Engine</div>
-                            <div class="arch-title">MEMBERSHIP MANAGEMENT SYSTEM</div>
-                            <ul class="arch-list">
-                                <li>Member Identity</li><li>Member Profile</li>
-                                <li>Membership Lifecycle</li><li>Participation</li>
-                                <li>Points</li><li>Badges</li>
-                                <li>Tier</li><li>Rewards</li>
-                            </ul>
+                        <!-- Services / Channels -->
+                        <div class="arch-box secondary" style="border: none; background: transparent; padding: 0;">
+                            <div class="micro-label" style="color: var(--text-muted); text-align: center;">Services / Channels</div>
+                            <div style="display: flex; gap: 0.5rem; justify-content: space-between; margin-top: 0.5rem;">
+                                <div class="badge-pill" style="flex: 1; text-align: center; padding: 0.5rem; font-size: 0.75rem;">KOMITKABE Website</div>
+                                <div class="badge-pill" style="flex: 1; text-align: center; padding: 0.5rem; font-size: 0.75rem; border-color: var(--cyan-accent); color: var(--cyan-accent);">Event Management</div>
+                                <div class="badge-pill" style="flex: 1; text-align: center; padding: 0.5rem; font-size: 0.75rem;">Other Services</div>
+                            </div>
                         </div>
-                        <div style="text-align: center; margin: 1rem 0; color: var(--cyan-accent); font-weight: 800;">&darr;</div>
-                        <div class="arch-box secondary" style="background: var(--blue-soft);">
-                            <div class="arch-title" style="text-align: center;">MEMBER IDENTITY</div>
+                        
+                        <div style="text-align: center; margin: 0.75rem 0; color: var(--line-color); font-weight: 800; opacity: 0.6;">&darr; &uarr;</div>
+                        
+                        <!-- API / Service Layer -->
+                        <div class="arch-box secondary" style="background: rgba(253, 252, 248, 0.5); border: 1px dashed var(--line-color); padding: 0.75rem;">
+                            <div class="arch-title" style="text-align: center; font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.2em; margin: 0;">API / SERVICE LAYER</div>
                         </div>
-                        <div style="text-align: center; margin: 1rem 0; color: var(--cyan-accent); font-weight: 800;">&darr;</div>
-                        <div class="arch-box secondary">
-                            <div class="micro-label">Shared Capability</div>
-                            <div class="arch-title">EVENT MANAGEMENT SYSTEM</div>
-                            <ul class="arch-list">
-                                <li>Event Management</li><li>Registration</li>
-                                <li>Participant</li><li>Attendance</li>
-                                <li>Certificate</li><li>Event History</li>
-                            </ul>
+
+                        <div style="text-align: center; margin: 0.75rem 0; color: var(--cyan-accent); font-weight: 800;">&darr; &uarr;</div>
+                        
+                        <!-- Core Membership Platform -->
+                        <div class="arch-box" style="border-color: var(--blue-primary); box-shadow: 0 4px 12px rgba(23, 70, 162, 0.05); text-align: center;">
+                            <div class="micro-label" style="color: var(--blue-primary);">Core Platform</div>
+                            <div class="arch-title" style="margin-bottom: 0;">MEMBERSHIP MANAGEMENT SYSTEM</div>
                         </div>
-                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
-                            <div style="color: var(--cyan-accent); font-weight: 800; transform: rotate(180deg); margin-left: 20%;">&darr; <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase;">MEMBER HISTORY</span></div>
-                            <div style="color: var(--cyan-accent); font-weight: 800; margin-right: 20%;">&darr; <span style="font-size: 0.7rem; font-weight: 600; text-transform: uppercase;">PARTICIPATION</span></div>
+
+                        <div style="text-align: center; margin: 0.75rem 0; color: var(--blue-primary); font-weight: 800;">&darr; &uarr;</div>
+                        
+                        <!-- Central Member Data -->
+                        <div class="arch-box secondary" style="background: var(--blue-primary); color: white; border: none; padding: 1.25rem;">
+                            <div class="arch-title" style="text-align: center; color: white; margin: 0; font-size: 1.1rem; letter-spacing: 0.1em;">CENTRAL MEMBER DATA</div>
+                            <div style="text-align: center; margin-top: 1rem;">
+                                <span style="font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.9); letter-spacing: 0.15em; background: rgba(0,0,0,0.2); padding: 0.4rem 1rem; border-radius: 20px;">ONE MEMBER &bull; ONE IDENTITY</span>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -277,7 +314,7 @@
                         <h2 class="slide-title tight" style="margin-bottom: 1.5rem;">Membership<br>Management System</h2>
                         
                         <p style="font-size: 1.15rem; font-weight: 500; color: var(--text-secondary); line-height: 1.6; margin-bottom: 4rem; max-width: 95%;">
-                            Membangun satu sumber data keanggotaan yang terverifikasi untuk mengelola identitas dan lifecycle setiap anggota KOMITKABE.
+                            Membangun satu sumber data keanggotaan yang terverifikasi sebagai <em>source of truth</em>. Membership data is managed centrally and exposed to connected services through API.
                         </p>
 
                         <div>
@@ -287,34 +324,30 @@
                         </div>
                     </div>
                     
-                    <div class="split-right anim-elem anim-delay-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: stretch;">
-                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <div class="card-base" style="flex: 1; display: flex; flex-direction: column;">
-                                <div class="micro-label">Member Identity</div>
-                                <ul class="arch-list" style="display: block;">
-                                    <li>Member ID</li><li>Member Profile</li><li>Member Directory</li><li>Verification</li><li>Digital / Physical ID Card</li>
-                                </ul>
-                            </div>
-                            <div class="card-base" style="flex: 1; display: flex; flex-direction: column;">
-                                <div class="micro-label">Membership Lifecycle</div>
-                                <ul class="arch-list" style="display: block;">
-                                    <li>Onboarding</li><li>Membership Status</li><li>Membership History</li><li>Status Changes</li><li>Renewal / Reactivation</li>
-                                </ul>
-                            </div>
+                    <div class="split-right anim-elem anim-delay-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: start;">
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">MEMBER IDENTITY</div>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                            <div class="card-base" style="flex: 1; display: flex; flex-direction: column;">
-                                <div class="micro-label">Member Engagement</div>
-                                <ul class="arch-list" style="display: block;">
-                                    <li>Activities</li><li>Participation</li><li>Contribution</li><li>Community Involvement</li><li>Participation History</li>
-                                </ul>
-                            </div>
-                            <div class="card-base" style="flex: 1; display: flex; flex-direction: column;">
-                                <div class="micro-label">Recognition</div>
-                                <ul class="arch-list" style="display: block;">
-                                    <li>Points</li><li>Badges</li><li>Tier</li><li>Rewards</li>
-                                </ul>
-                            </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">MEMBER PROFILE</div>
+                        </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">MEMBERSHIP LIFECYCLE</div>
+                        </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">MEMBERSHIP STATUS</div>
+                        </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">MEMBERSHIP HISTORY</div>
+                        </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">PARTICIPATION</div>
+                        </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">POINTS / TIER</div>
+                        </div>
+                        <div class="card-base" style="padding: 1.25rem; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="font-size: 0.95rem; font-weight: 700; color: var(--heading);">BADGES / RECOGNITION</div>
                         </div>
                     </div>
                 </div>
@@ -328,22 +361,24 @@
                 <div class="anim-elem anim-delay-1">
                     <div class="slide-id" style="justify-content: center;"><span>01.1</span></div>
                     <h2 class="slide-title tight">Member Onboarding</h2>
-                    <p class="program-desc" style="margin: 0 auto var(--space-xl) auto;">Modul awal dari Membership Management System untuk memproses calon anggota.</p>
+                    <p class="program-desc" style="margin: 0 auto var(--space-xl) auto;">Proses awal yang mengubah <em>applicant</em> menjadi entitas data dengan identitas resmi yang dikelola terpusat oleh Membership Management System.</p>
                 </div>
                 
                 <div class="anim-elem anim-delay-2" style="width: 100%;">
                     <div class="flow-diagram horizontal" style="justify-content: center;">
-                        <div class="flow-node">REGISTRATION</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">VERIFICATION</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node highlight">MEMBER ID</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">PROFILE</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">ACTIVATION</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node" style="border-color: var(--emerald-accent); color: var(--emerald-accent); background: var(--emerald-soft);">ACTIVE MEMBERSHIP</div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">APPLICANT</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">REGISTRATION</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">VALIDATION</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">VERIFICATION</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">APPROVAL</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node highlight" style="padding: 0.5rem 1rem;">MEMBER ID</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem; border-color: var(--emerald-accent); color: var(--emerald-accent); background: var(--emerald-soft);">ACTIVE MEMBER</div>
                     </div>
                 </div>
             </div>
@@ -361,16 +396,17 @@
                 <div class="split-layout">
                     <div class="split-left anim-elem anim-delay-2">
                         <div class="micro-label">Progression Flow</div>
-                        <div class="flow-diagram horizontal" style="margin-bottom: var(--space-lg); gap: 0.2rem;">
-                            <div class="flow-node" style="padding: 0.5rem 1rem;">ACTIVITY</div><div class="flow-arrow" style="width: 15px;"></div>
-                            <div class="flow-node highlight" style="padding: 0.5rem 1rem;">POINTS</div><div class="flow-arrow" style="width: 15px;"></div>
-                            <div class="flow-node" style="padding: 0.5rem 1rem;">BADGES</div><div class="flow-arrow" style="width: 15px;"></div>
-                            <div class="flow-node highlight" style="padding: 0.5rem 1rem;">TIER</div><div class="flow-arrow" style="width: 15px;"></div>
-                            <div class="flow-node" style="padding: 0.5rem 1rem;">REWARDS</div>
+                        <div class="flow-diagram horizontal" style="margin-bottom: var(--space-lg); gap: 0.2rem; flex-wrap: wrap;">
+                            <div class="flow-node" style="padding: 0.4rem 0.75rem; font-size: 0.7rem;">ACTIVITY</div><div class="flow-arrow" style="width: 10px;"></div>
+                            <div class="flow-node" style="padding: 0.4rem 0.75rem; font-size: 0.7rem;">PARTICIPATION</div><div class="flow-arrow" style="width: 10px;"></div>
+                            <div class="flow-node" style="padding: 0.4rem 0.75rem; font-size: 0.7rem;">CONTRIBUTION</div><div class="flow-arrow" style="width: 10px;"></div>
+                            <div class="flow-node highlight" style="padding: 0.4rem 0.75rem; font-size: 0.7rem;">POINTS</div><div class="flow-arrow" style="width: 10px;"></div>
+                            <div class="flow-node highlight" style="padding: 0.4rem 0.75rem; font-size: 0.7rem;">TIER / BADGES</div><div class="flow-arrow" style="width: 10px;"></div>
+                            <div class="flow-node" style="padding: 0.4rem 0.75rem; font-size: 0.7rem;">MEMBERSHIP HISTORY</div>
                         </div>
 
                         <div class="micro-label">Membership Tier</div>
-                        <div class="tier-row" style="margin-bottom: var(--space-lg);">
+                        <div class="tier-row" style="margin-bottom: 1rem;">
                             <span class="tier-badge basic">BASIC</span> &rarr;
                             <span class="tier-badge plus">PLUS</span> &rarr;
                             <span class="tier-badge pro">PRO</span> &rarr;
@@ -378,39 +414,139 @@
                             <span class="tier-badge ultra">ULTRA</span>
                         </div>
 
-                        <div class="micro-label">Badge System (Conceptual)</div>
-                        <div class="badge-grid" style="margin-bottom: 1rem;">
-                            <span class="badge-pill active">Event Regular</span>
-                            <span class="badge-pill active">Contributor</span>
-                            <span class="badge-pill">Knowledge Sharer</span>
-                            <span class="badge-pill active">Organizer</span>
-                            <span class="badge-pill">1 Year Milestone</span>
-                            <span class="badge-pill">Founding Member</span>
+                        <div class="micro-label" style="margin-top: 1.5rem; border-top: 1px solid var(--line-soft); padding-top: 1rem;">TIER BENEFITS (CONCEPTUAL)</div>
+                        <div style="display: flex; gap: 0.4rem; align-items: stretch; margin-bottom: 2rem; width: 100%;">
+                            <div style="flex: 1; padding: 0.5rem; border: 1px solid var(--line-soft); background: var(--bg-color); border-radius: 4px;">
+                                <div style="font-size: 0.6rem; font-weight: 800; color: var(--text-muted); margin-bottom: 0.4rem; letter-spacing: 0.05em;">BASIC</div>
+                                <ul style="margin: 0; padding-left: 0.6rem; font-size: 0.6rem; color: var(--text-secondary); line-height: 1.3;">
+                                    <li style="margin-bottom: 0.2rem;">Akses komunitas</li>
+                                    <li style="margin-bottom: 0.2rem;">Informasi kegiatan</li>
+                                    <li>Profil anggota</li>
+                                </ul>
+                            </div>
+                            <div style="flex: 1; padding: 0.5rem; border: 1px solid var(--line-soft); background: var(--bg-color); border-radius: 4px;">
+                                <div style="font-size: 0.6rem; font-weight: 800; color: var(--blue-primary); margin-bottom: 0.4rem; letter-spacing: 0.05em;">PLUS</div>
+                                <ul style="margin: 0; padding-left: 0.6rem; font-size: 0.6rem; color: var(--text-secondary); line-height: 1.3;">
+                                    <li style="margin-bottom: 0.2rem;">Event prioritas</li>
+                                    <li style="margin-bottom: 0.2rem;">Konten eksklusif</li>
+                                    <li>Networking</li>
+                                </ul>
+                            </div>
+                            <div style="flex: 1; padding: 0.5rem; border: 1px solid var(--blue-primary); background: rgba(23, 70, 162, 0.05); border-radius: 4px;">
+                                <div style="font-size: 0.6rem; font-weight: 800; color: var(--blue-primary); margin-bottom: 0.4rem; letter-spacing: 0.05em;">PRO</div>
+                                <ul style="margin: 0; padding-left: 0.6rem; font-size: 0.6rem; color: var(--text-secondary); line-height: 1.3;">
+                                    <li style="margin-bottom: 0.2rem;">Akses lebih luas</li>
+                                    <li style="margin-bottom: 0.2rem;">Kontribusi diakui</li>
+                                    <li>Badge khusus</li>
+                                </ul>
+                            </div>
+                            <div style="flex: 1; padding: 0.5rem; border: 1px solid var(--line-soft); background: var(--bg-color); border-radius: 4px;">
+                                <div style="font-size: 0.6rem; font-weight: 800; color: var(--cyan-accent); margin-bottom: 0.4rem; letter-spacing: 0.05em;">PRIME</div>
+                                <ul style="margin: 0; padding-left: 0.6rem; font-size: 0.6rem; color: var(--text-secondary); line-height: 1.3;">
+                                    <li style="margin-bottom: 0.2rem;">Program strategis</li>
+                                    <li style="margin-bottom: 0.2rem;">Kolaborasi proyek</li>
+                                    <li>Recognition</li>
+                                </ul>
+                            </div>
+                            <div style="flex: 1; padding: 0.5rem; border: 1px solid var(--line-soft); background: var(--bg-color); border-radius: 4px;">
+                                <div style="font-size: 0.6rem; font-weight: 800; color: var(--orange-accent); margin-bottom: 0.4rem; letter-spacing: 0.05em;">ULTRA</div>
+                                <ul style="margin: 0; padding-left: 0.6rem; font-size: 0.6rem; color: var(--text-secondary); line-height: 1.3;">
+                                    <li style="margin-bottom: 0.2rem;">Advisory access</li>
+                                    <li style="margin-bottom: 0.2rem;">Leadership role</li>
+                                    <li>Special recognition</li>
+                                </ul>
+                            </div>
                         </div>
+
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0;">Seluruh riwayat partisipasi dan progres aktivitas anggota dikelola dan terhubung dengan satu <strong>Member Identity</strong> tunggal.</p>
                     </div>
 
                     <div class="split-right anim-elem anim-delay-3">
-                        <div class="card-base" style="border: 2px solid var(--line-soft); background: var(--blue-soft);">
-                            <div class="micro-label" style="text-align: center; letter-spacing: 0.2em;">KOMITKABE MEMBER</div>
-                            <div style="text-align: center; margin: 1rem 0;">
-                                <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--cyan-accent); margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 2rem;">A</div>
-                                <h3 style="margin-top: 1rem; color: var(--heading);">ANONYMOUS MEMBER</h3>
-                                <p style="font-size: 0.8rem; color: var(--text-muted);">ID: KKB-2027-0001</p>
-                            </div>
-                            <div style="background: var(--white); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                                    <span class="tier-badge pro">PRO TIER</span>
-                                    <span style="font-weight: 800; color: var(--blue-primary);">2,450 XP</span>
+                        <div class="card-base" style="border: 1px solid var(--line-soft); background: var(--bg-color); padding: 2rem;">
+                            <div class="micro-label" style="letter-spacing: 0.2em; margin-bottom: 1.5rem; border-bottom: 1px solid var(--line-soft); padding-bottom: 0.5rem;">MEMBER PROFILE</div>
+                            
+                            <!-- Header / Identity -->
+                            <div style="display: flex; gap: 1.25rem; align-items: center; margin-bottom: 1.5rem;">
+                                <!-- Portrait -->
+                                <div style="width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, var(--blue-primary), var(--cyan-accent)); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: 800; flex-shrink: 0; box-shadow: 0 4px 10px rgba(23, 70, 162, 0.2);">
+                                    LN
                                 </div>
-                                <div style="width: 100%; height: 6px; background: var(--line-color); border-radius: 3px; overflow: hidden; margin-bottom: 0.5rem;">
-                                    <div style="width: 75%; height: 100%; background: var(--cyan-accent);"></div>
+                                <div style="flex: 1;">
+                                    <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--heading); margin: 0 0 0.15rem 0;">Langit Nusantara</h3>
+                                    <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.4rem;">PT Langit Nusantara Creative</div>
+                                    <div style="display: inline-block; padding: 0.15rem 0.5rem; background: var(--emerald-soft); color: var(--emerald-accent); border: 1px solid var(--emerald-accent); border-radius: 20px; font-size: 0.65rem; font-weight: 700;">Active Member</div>
                                 </div>
-                                <div style="font-size: 0.7rem; color: var(--text-muted); text-align: right;">Progress to PRIME</div>
+                                <div style="text-align: right; align-self: flex-start;">
+                                    <div style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.15rem;">TIER</div>
+                                    <div style="font-size: 1.15rem; font-weight: 800; color: var(--blue-primary);">PRO</div>
+                                </div>
                             </div>
-                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; text-align: center;">
-                                <div><div style="font-weight: 800; font-size: 1.2rem; color: var(--heading);">12</div><div style="font-size: 0.7rem; color: var(--text-muted);">ACTIVITIES</div></div>
-                                <div><div style="font-weight: 800; font-size: 1.2rem; color: var(--heading);">5</div><div style="font-size: 0.7rem; color: var(--text-muted);">CONTRIBUTIONS</div></div>
-                                <div><div style="font-weight: 800; font-size: 1.2rem; color: var(--heading);">8</div><div style="font-size: 0.7rem; color: var(--text-muted);">BADGES</div></div>
+
+                            <!-- Digital Member ID with QR Concept -->
+                            <div style="border: 1px solid var(--cyan-accent); border-radius: 8px; background: rgba(0, 180, 216, 0.03); padding: 0.75rem 1.25rem; margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <div style="font-size: 0.65rem; font-weight: 800; color: var(--cyan-accent); letter-spacing: 0.1em; margin-bottom: 0.15rem;">DIGITAL MEMBER ID</div>
+                                    <div style="font-size: 1rem; font-weight: 700; color: var(--heading);">KMB-2027-0001</div>
+                                    <div style="font-size: 0.7rem; font-weight: 500; color: var(--text-secondary); margin-top: 0.15rem;">Member ID &bull; QR Verification</div>
+                                </div>
+                                <!-- Generic conceptual QR icon using CSS grid -->
+                                <div style="width: 36px; height: 36px; padding: 3px; border: 1.5px solid var(--heading); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 3px; opacity: 0.8;">
+                                    <div style="background: var(--heading); border-radius: 1px;"></div>
+                                    <div style="background: var(--heading); border-radius: 1px;"></div>
+                                    <div style="background: var(--heading); border-radius: 1px;"></div>
+                                    <div style="border: 1.5px solid var(--heading); border-radius: 1px;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Data Grid -->
+                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                                <div>
+                                    <div style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.15rem;">POINTS</div>
+                                    <div style="font-size: 1.05rem; font-weight: 700; color: var(--heading);">1,250</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.15rem;">PARTISIPASI</div>
+                                    <div style="font-size: 1.05rem; font-weight: 700; color: var(--heading);">12 <span style="font-size: 0.75rem; font-weight: 500; color: var(--text-secondary);">kegiatan</span></div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.15rem;">KONTRIBUSI</div>
+                                    <div style="font-size: 1.05rem; font-weight: 700; color: var(--heading);">5 <span style="font-size: 0.75rem; font-weight: 500; color: var(--text-secondary);">kontribusi</span></div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.15rem;">RIWAYAT</div>
+                                    <div style="font-size: 1.05rem; font-weight: 700; color: var(--heading);"><span style="font-size: 0.75rem; font-weight: 500; color: var(--text-secondary);">Sejak </span>2027</div>
+                                </div>
+                            </div>
+
+                            <!-- Badges -->
+                            <div>
+                                <div style="font-size: 0.65rem; font-weight: 700; color: var(--text-muted); margin-bottom: 0.5rem;">BADGES</div>
+                                <div style="display: flex; gap: 0.75rem;">
+                                    <div style="flex: 1; text-align: center; background: var(--bg-color); border: 1px solid var(--line-soft); padding: 0.75rem 0.25rem; border-radius: 6px;">
+                                        <div style="width: 26px; height: 26px; margin: 0 auto 0.5rem auto; background: rgba(23, 70, 162, 0.1); border: 1.5px solid var(--blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                            <div style="width: 10px; height: 10px; background: var(--blue-primary); border-radius: 50%;"></div>
+                                        </div>
+                                        <div style="font-size: 0.6rem; font-weight: 700; color: var(--heading); line-height: 1.2;">CORE<br>MEMBER</div>
+                                    </div>
+                                    <div style="flex: 1; text-align: center; background: var(--bg-color); border: 1px solid var(--line-soft); padding: 0.75rem 0.25rem; border-radius: 6px;">
+                                        <div style="width: 26px; height: 26px; margin: 0 auto 0.5rem auto; background: rgba(0, 180, 216, 0.1); border: 1.5px solid var(--cyan-accent); border-radius: 6px; transform: rotate(45deg); display: flex; align-items: center; justify-content: center;">
+                                            <div style="width: 10px; height: 10px; background: var(--cyan-accent); border-radius: 1px; transform: rotate(-45deg);"></div>
+                                        </div>
+                                        <div style="font-size: 0.6rem; font-weight: 700; color: var(--heading); line-height: 1.2;">EVENT<br>PARTICIPANT</div>
+                                    </div>
+                                    <div style="flex: 1; text-align: center; background: var(--bg-color); border: 1px solid var(--line-soft); padding: 0.75rem 0.25rem; border-radius: 6px;">
+                                        <div style="width: 26px; height: 26px; margin: 0 auto 0.5rem auto; background: rgba(5, 150, 105, 0.1); border: 1.5px solid var(--emerald-accent); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); display: flex; align-items: center; justify-content: center;">
+                                            <div style="width: 10px; height: 10px; background: var(--emerald-accent); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+                                        </div>
+                                        <div style="font-size: 0.6rem; font-weight: 700; color: var(--heading); line-height: 1.2;">CONTRIBUTOR</div>
+                                    </div>
+                                    <div style="flex: 1; text-align: center; background: var(--bg-color); border: 1px solid var(--line-soft); padding: 0.75rem 0.25rem; border-radius: 6px;">
+                                        <div style="width: 26px; height: 26px; margin: 0 auto 0.5rem auto; background: rgba(245, 158, 11, 0.1); border: 1.5px solid var(--orange-accent); border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+                                            <div style="width: 10px; height: 10px; background: var(--orange-accent); clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+                                        </div>
+                                        <div style="font-size: 0.6rem; font-weight: 700; color: var(--heading); line-height: 1.2;">KNOWLEDGE<br>SHARER</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -418,46 +554,111 @@
             </div>
         </section>
 
-        <!-- SLIDE 09: EVENT MANAGEMENT -->
+        <!-- SLIDE 09: MEMBER DATA & API SERVICES -->
         <section class="slide" id="slide-9">
+            <style>
+                #slide-9::before {
+                    background-position: right center;
+                    background-size: 110%;
+                    opacity: 0.15;
+                }
+                #slide-9::after {
+                    content: ''; position: absolute; inset: 0;
+                    background: linear-gradient(to bottom, var(--bg-color) 10%, rgba(253, 252, 248, 0.9) 70%, var(--bg-color) 100%);
+                    z-index: 0; pointer-events: none;
+                }
+            </style>
             <div class="slide-numeral">09</div>
+            <div class="slide-content" style="align-items: center; text-align: center;">
+                <div class="anim-elem anim-delay-1" style="position: relative; z-index: 1;">
+                    <div class="slide-id" style="justify-content: center;"><span>01.3</span></div>
+                    <h2 class="slide-title tight">Member Data &amp; API Services</h2>
+                    <p class="program-desc" style="margin: 0 auto 2rem auto;">Data keanggotaan dikelola secara terpusat oleh Membership Management System dan digunakan oleh berbagai <em>service</em> melalui API.</p>
+                </div>
+                
+                <div class="anim-elem anim-delay-2" style="width: 100%; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 1;">
+                    <div style="font-size: 0.85rem; font-weight: 800; color: var(--blue-primary); margin-bottom: 1rem; letter-spacing: 0.2em; text-transform: uppercase;">ONE MEMBER &bull; ONE IDENTITY &bull; ONE SOURCE OF TRUTH</div>
+                    
+                    <div class="arch-box secondary" style="background: var(--blue-primary); color: white; border: none; padding: 1.25rem 2.5rem; border-radius: 12px; margin-bottom: 0;">
+                        <div class="arch-title" style="margin: 0; text-align: center; color: white;">CENTRAL MEMBER DATA</div>
+                        <div style="font-size: 0.75rem; color: rgba(255,255,255,0.8); letter-spacing: 0.15em; margin-top: 0.25rem;">SOURCE OF TRUTH</div>
+                    </div>
+                    
+                    <div style="width: 2px; height: 1.5rem; background: var(--blue-primary); opacity: 0.5;"></div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-bottom: 0;">
+                        <div class="badge-pill" style="border-color: var(--blue-primary); color: var(--blue-primary); font-size: 0.8rem; padding: 0.5rem 1rem;">Identity</div>
+                        <div class="badge-pill" style="border-color: var(--blue-primary); color: var(--blue-primary); font-size: 0.8rem; padding: 0.5rem 1rem;">Profile</div>
+                        <div class="badge-pill" style="border-color: var(--blue-primary); color: var(--blue-primary); font-size: 0.8rem; padding: 0.5rem 1rem;">Membership</div>
+                    </div>
+
+                    <div style="width: 2px; height: 1.5rem; background: var(--blue-primary); opacity: 0.5;"></div>
+
+                    <div class="arch-box" style="border-color: var(--blue-primary); box-shadow: 0 4px 12px rgba(23, 70, 162, 0.05); text-align: center; padding: 1.25rem 2.5rem; margin-bottom: 0;">
+                        <div class="arch-title" style="margin: 0;">MEMBERSHIP MANAGEMENT SYSTEM</div>
+                    </div>
+                    
+                    <div style="width: 2px; height: 1.5rem; border-left: 2px dashed var(--line-color);"></div>
+
+                    <div class="arch-box secondary" style="background: rgba(253, 252, 248, 0.8); border: 1px dashed var(--line-color); padding: 0.75rem 2.5rem; margin-bottom: 1rem;">
+                        <div class="arch-title" style="text-align: center; font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.2em; margin: 0;">API / SERVICE LAYER</div>
+                    </div>
+
+                    <div style="display: flex; gap: 1.5rem; width: 100%; max-width: 700px; justify-content: center;">
+                        <div class="card-base" style="flex: 1; padding: 1.25rem 1rem; text-align: center; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="color: var(--line-color); font-weight: 800; margin-bottom: 0.5rem; opacity: 0.6;">&darr; &uarr;</div>
+                            <div style="font-weight: 700; font-size: 0.95rem; color: var(--heading);">KOMITKABE Website</div>
+                        </div>
+                        <div class="card-base" style="flex: 1; padding: 1.25rem 1rem; text-align: center; border: 1px solid var(--cyan-accent); background: var(--bg-color);">
+                            <div style="color: var(--cyan-accent); font-weight: 800; margin-bottom: 0.5rem;">&darr; &uarr;</div>
+                            <div style="font-weight: 700; font-size: 0.95rem; color: var(--cyan-accent);">Event Management</div>
+                        </div>
+                        <div class="card-base" style="flex: 1; padding: 1.25rem 1rem; text-align: center; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                            <div style="color: var(--line-color); font-weight: 800; margin-bottom: 0.5rem; opacity: 0.6;">&darr; &uarr;</div>
+                            <div style="font-weight: 700; font-size: 0.95rem; color: var(--heading);">Other Services</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 10: EVENT MANAGEMENT -->
+        <section class="slide" id="slide-10">
+            <div class="slide-numeral">10</div>
             <div class="slide-content" style="align-items: center; text-align: center;">
                 <div class="anim-elem anim-delay-1">
                     <div class="slide-id" style="justify-content: center;"><span>PROGRAM 02</span></div>
                     <h2 class="slide-title tight">Event Management System</h2>
-                    <p class="program-desc" style="margin: 0 auto var(--space-xl) auto;">Shared system capability untuk seluruh divisi terkait, mengembalikan data partisipasi untuk memperkaya Member Profile.</p>
+                    <p class="program-desc" style="margin: 0 auto var(--space-xl) auto;">Event services use the central member identity instead of creating a separate member identity.</p>
                 </div>
                 
                 <div class="anim-elem anim-delay-2" style="width: 100%;">
-                    <div class="flow-diagram horizontal" style="justify-content: center; margin-bottom: 2rem;">
-                        <div class="flow-node">DIVISION / OWNER</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node highlight">EVENT MANAGEMENT</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">REGISTRATION</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">PARTICIPANT</div>
-                    </div>
-                    <div class="flow-diagram horizontal" style="justify-content: center;">
-                        <div class="flow-node">ATTENDANCE</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node highlight">PARTICIPATION RECORD</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node" style="border-color: var(--emerald-accent); color: var(--emerald-accent); background: var(--emerald-soft);">MEMBER HISTORY</div>
+                    <div class="flow-diagram horizontal" style="justify-content: center; gap: 0.2rem; flex-wrap: wrap; transform: scale(0.95);">
+                        <div class="flow-node highlight" style="padding: 0.5rem 1rem;">MEMBER IDENTITY</div><div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">API</div><div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node highlight" style="padding: 0.5rem 1rem; border-color: var(--cyan-accent); color: var(--cyan-accent); background: rgba(0, 180, 216, 0.05);">EVENT MANAGEMENT</div><div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">REGISTRATION</div><div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">ATTENDANCE / CHECK-IN</div><div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node highlight" style="padding: 0.5rem 1rem;">PARTICIPATION</div><div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem; border-color: var(--emerald-accent); color: var(--emerald-accent); background: var(--emerald-soft);">MEMBERSHIP HISTORY</div>
                     </div>
                 </div>
 
-                <div class="anim-elem anim-delay-3" style="margin-top: 3rem; display: flex; justify-content: center; gap: 2rem;">
-                    <div class="badge-pill">Certificate Generation</div>
-                    <div class="badge-pill">Event History</div>
+                <div class="anim-elem anim-delay-3" style="margin-top: 4rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    <div class="badge-pill">Event Management</div>
+                    <div class="badge-pill">Registration</div>
+                    <div class="badge-pill">Participant Management</div>
+                    <div class="badge-pill">Attendance / Check-in</div>
                     <div class="badge-pill">Notification</div>
+                    <div class="badge-pill">Certificate</div>
+                    <div class="badge-pill">Event History</div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 10: ADMINISTRATION -->
-        <section class="slide" id="slide-10">
-            <div class="slide-numeral">10</div>
+        <!-- SLIDE 11: ADMINISTRATION -->
+        <section class="slide" id="slide-11">
+            <div class="slide-numeral">11</div>
             <div class="slide-content" style="align-items: center; justify-content: center; text-align: center;">
                 <div class="anim-elem anim-delay-1" style="max-width: 1000px; margin: 0 auto; width: 100%;">
                     <div class="slide-id" style="justify-content: center;"><span>PROGRAM 03</span></div>
@@ -505,9 +706,9 @@
             </div>
         </section>
 
-        <!-- SLIDE 11: GOVERNANCE -->
-        <section class="slide" id="slide-11">
-            <div class="slide-numeral">11</div>
+        <!-- SLIDE 12: GOVERNANCE -->
+        <section class="slide" id="slide-12">
+            <div class="slide-numeral">12</div>
             <div class="slide-content" style="align-items: center; justify-content: center; text-align: center;">
                 <div class="anim-elem anim-delay-1" style="max-width: 1000px; margin: 0 auto; width: 100%;">
                     <div class="slide-id" style="justify-content: center;"><span>PROGRAM 04</span></div>
@@ -554,9 +755,9 @@
                             <div style="flex: 1;">
                                 <h4 style="font-size: 1rem; font-weight: 800; color: var(--emerald-accent); letter-spacing: 0.1em; margin-bottom: 1rem;">AUTHORITY</h4>
                                 <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.95rem; font-weight: 500; color: var(--text-secondary); line-height: 1.8;">
-                                    <li>Kewenangan</li>
-                                    <li>Decision Process</li>
                                     <li>Roles &amp; Responsibilities</li>
+                                    <li>Authority</li>
+                                    <li>Decision Process</li>
                                 </ul>
                             </div>
                             <!-- ACCOUNTABILITY -->
@@ -566,7 +767,7 @@
                                     <li>LPJ</li>
                                     <li>Finance</li>
                                     <li>Assets</li>
-                                    <li>Org. Reporting</li>
+                                    <li>Organizational Reporting</li>
                                 </ul>
                             </div>
                         </div>
@@ -622,15 +823,15 @@
             </div>
         </section>
 
-        <!-- SLIDE 12: REVIEW AD/ART -->
-        <section class="slide" id="slide-12">
-            <div class="slide-numeral">12</div>
+        <!-- SLIDE 13: REVIEW AD/ART -->
+        <section class="slide" id="slide-13">
+            <div class="slide-numeral">13</div>
             <div class="slide-content">
                 <!-- HEADER -->
                 <div class="anim-elem anim-delay-1" style="max-width: 1000px; margin: 0 auto; width: 100%;">
                     <div class="slide-id"><span>04.1</span></div>
                     <h2 class="slide-title tight">Review AD/ART</h2>
-                    <p class="program-desc">Penyempurnaan AD/ART untuk memperjelas tata kelola, kewenangan, regenerasi, dan pertanggungjawaban organisasi.</p>
+                    <p class="program-desc">Memperjelas aturan main organisasi untuk mendukung tata kelola dan regenerasi yang lebih terstruktur.</p>
                 </div>
 
                 <!-- MAIN SPLIT CONTENT -->
@@ -733,47 +934,40 @@
             </div>
         </section>
 
-        <!-- SLIDE 13: STRUKTUR KELEMBAGAAN -->
-        <section class="slide" id="slide-13">
-            <div class="slide-numeral">13</div>
+        <!-- SLIDE 14: STRUKTUR KELEMBAGAAN -->
+        <section class="slide" id="slide-14">
+            <div class="slide-numeral">14</div>
             <div class="slide-content" style="align-items: center; text-align: center;">
                 <div class="anim-elem anim-delay-1">
                     <div class="slide-id" style="justify-content: center;"><span>04.2</span></div>
                     <h2 class="slide-title tight">Struktur Kelembagaan</h2>
-                    <div class="micro-label" style="margin-bottom: 2rem;">LEGAL ENTITY &amp; AUTHORITY</div>
+                    <p class="program-desc" style="margin: 0 auto var(--space-xl) auto;">Mendesain susunan organisasi yang efektif dengan pembagian peran dan kewenangan yang jelas.</p>
                 </div>
                 
-                <div class="anim-elem anim-delay-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; width: 100%; max-width: 900px; margin: 0 auto;">
-                    <div class="card-base">
-                        <h3 class="section-title" style="color: var(--blue-primary); text-align: center;">PERKUMPULAN</h3>
-                        <div class="flow-diagram" style="align-items: center;">
-                            <div class="flow-node">ANGGOTA</div><div class="flow-arrow" style="margin:0; height:15px;"></div>
-                            <div class="flow-node highlight">RAPAT ANGGOTA</div><div class="flow-arrow" style="margin:0; height:15px;"></div>
-                            <div class="flow-node">PENGURUS + PENGAWAS</div>
-                        </div>
+                <div class="anim-elem anim-delay-2" style="display: flex; gap: 2rem; width: 100%; max-width: 1000px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+                    <div class="card-base" style="flex: 1; min-width: 250px; padding: 2rem; text-align: left; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                        <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--heading); margin-bottom: 1rem; border-bottom: 2px solid var(--blue-primary); display: inline-block; padding-bottom: 0.2rem; letter-spacing: 0.1em;">STRUKTUR</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">Susunan hierarki dan hubungan fungsional antarbagian dalam organisasi.</p>
                     </div>
-                    <div class="card-base">
-                        <h3 class="section-title" style="color: var(--emerald-accent); text-align: center;">YAYASAN</h3>
-                        <div class="flow-diagram" style="align-items: center;">
-                            <div class="flow-node highlight" style="border-color: var(--emerald-accent); color: var(--emerald-accent); background: var(--emerald-soft);">PEMBINA</div><div class="flow-arrow" style="margin:0; height:15px;"></div>
-                            <div class="flow-node">PENGURUS + PENGAWAS</div>
-                        </div>
+                    <div class="card-base" style="flex: 1; min-width: 250px; padding: 2rem; text-align: left; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                        <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--heading); margin-bottom: 1rem; border-bottom: 2px solid var(--cyan-accent); display: inline-block; padding-bottom: 0.2rem; letter-spacing: 0.1em;">PERAN &amp; KEWENANGAN</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">Deskripsi tugas (Roles), batas kewenangan (Authority), dan tanggung jawab (Responsibility).</p>
+                    </div>
+                    <div class="card-base" style="flex: 1; min-width: 250px; padding: 2rem; text-align: left; border: 1px solid var(--line-soft); background: var(--bg-color);">
+                        <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--heading); margin-bottom: 1rem; border-bottom: 2px solid var(--emerald-accent); display: inline-block; padding-bottom: 0.2rem; letter-spacing: 0.1em;">KOORDINASI</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin: 0;">Mekanisme kerja sama, pelaporan, dan komunikasi antar divisi secara terstruktur.</p>
                     </div>
                 </div>
 
-                <div class="anim-elem anim-delay-3" style="margin-top: 3rem;">
-                    <p style="font-weight: 600; color: var(--heading-sec);">"Struktur organisasi dan kewenangan mengikuti bentuk badan hukum."</p>
-                    <div class="badge-grid" style="justify-content: center; margin-top: 1rem;">
-                        <span class="badge-pill">Membership</span><span class="badge-pill">Governance</span><span class="badge-pill">Leadership</span><span class="badge-pill">Assets &amp; Finance</span><span class="badge-pill">Accountability</span>
-                    </div>
-                    <p style="font-size: 0.75rem; color: var(--text-faint); margin-top: 2rem; font-style: italic;">Ilustrasi untuk bahan diskusi, bukan struktur final KOMITKABE. Referensi: UU No. 16/2001 jo. UU No. 28/2004</p>
+                <div class="anim-elem anim-delay-3" style="margin-top: 3.5rem;">
+                    <p style="font-size: 1.05rem; font-weight: 600; color: var(--heading-sec); margin: 0;">"Struktur organisasi dirancang untuk mendukung operasional yang gesit dan tata kelola yang akuntabel."</p>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 14: INSTITUTIONAL & LEGAL STUDY -->
-        <section class="slide" id="slide-14">
-            <div class="slide-numeral">14</div>
+        <!-- SLIDE 15: INSTITUTIONAL & LEGAL STUDY -->
+        <section class="slide" id="slide-15">
+            <div class="slide-numeral">15</div>
             <div class="slide-content" style="align-items: center; justify-content: flex-start; text-align: center; padding-top: 4vh;">
                 
                 <!-- HEADER -->
@@ -871,9 +1065,9 @@
             </div>
         </section>
 
-        <!-- SLIDE 15: CONGRESS & SUCCESSION -->
-        <section class="slide" id="slide-15">
-            <div class="slide-numeral">15</div>
+        <!-- SLIDE 16: CONGRESS & SUCCESSION -->
+        <section class="slide" id="slide-16">
+            <div class="slide-numeral">16</div>
             <div class="slide-content" style="align-items: center; text-align: center;">
                 <div class="anim-elem anim-delay-1">
                     <div class="slide-id" style="justify-content: center;"><span>04.4</span></div>
@@ -882,26 +1076,24 @@
                 </div>
                 
                 <div class="anim-elem anim-delay-2" style="width: 100%;">
-                    <div class="flow-diagram horizontal" style="justify-content: center;">
-                        <div class="flow-node">CURRENT LEADERSHIP</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node highlight">ACCOUNTABILITY</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node" style="border-color: var(--orange-accent); color: var(--orange-accent); background: var(--orange-soft);">CONGRESS</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">ELECTION</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">TRANSITION</div>
-                        <div class="flow-arrow"></div>
-                        <div class="flow-node">NEXT LEADERSHIP</div>
+                    <div class="flow-diagram horizontal" style="justify-content: center; gap: 0.5rem; transform: scale(0.95);">
+                        <div class="flow-node highlight" style="padding: 0.5rem 1rem;">2029</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">PREPARATION</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem;">FORMAL PROCESS</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node" style="padding: 0.5rem 1rem; border-color: var(--orange-accent); color: var(--orange-accent); background: var(--orange-soft);">CONGRESS</div>
+                        <div class="flow-arrow" style="width: 15px;"></div>
+                        <div class="flow-node highlight" style="padding: 0.5rem 1rem;">LEADERSHIP SUCCESSION</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SLIDE 16: ROADMAP -->
-        <section class="slide" id="slide-16">
-            <div class="slide-numeral">16</div>
+        <!-- SLIDE 17: ROADMAP -->
+        <section class="slide" id="slide-17">
+            <div class="slide-numeral">17</div>
             <div class="slide-content">
                 <div class="anim-elem anim-delay-1">
                     <div class="slide-id"><span>ROADMAP</span></div>
@@ -938,7 +1130,7 @@
                             <div class="rm-bar" style="left: 7.7%; width: 30.8%;">
                                 <div class="rm-text start">Reqs</div>
                                 <div class="rm-text" style="left: 33%;">Design</div>
-                                <div class="rm-text" style="left: 66%;">Build</div>
+                                <div class="rm-text" style="left: 66%;">Build / API</div>
                                 <div class="rm-text end" style="left: 100%;">Release</div>
                             </div>
                             <div class="rm-marker" style="left: 55%; background: var(--white); border: 2px solid var(--cyan-accent);"><div class="rm-text" style="top:-20px;">Operate / Improve</div></div>
@@ -980,7 +1172,6 @@
                                 <div class="rm-text" style="left: 50%;">Draft / Revise</div>
                                 <div class="rm-text end" style="left: 100%;">Finalize</div>
                             </div>
-                            <div class="rm-marker" style="left: 45%; background: var(--white); border: 2px solid var(--blue-primary);"><div class="rm-text" style="top:-20px;">Continuous</div></div>
                         </div>
                     </div>
 
@@ -989,10 +1180,10 @@
                         <div class="rm-label" style="padding-left: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">04.2 Struktur Kelembagaan</div>
                         <div class="rm-track">
                             <div class="rm-bar" style="left: 23.1%; width: 30.8%;">
-                                <div class="rm-text start">Study</div>
+                                <div class="rm-text start">Study / Review</div>
                                 <div class="rm-text" style="left: 33%;">Design</div>
                                 <div class="rm-text" style="left: 66%;">Alignment</div>
-                                <div class="rm-text end" style="left: 100%;">Formalize</div>
+                                <div class="rm-text end" style="left: 100%;">Implement / Formalize</div>
                             </div>
                         </div>
                     </div>
@@ -1005,7 +1196,7 @@
                                 <div class="rm-text start">Prep</div>
                                 <div class="rm-text" style="left: 25%;">Consultation</div>
                                 <div class="rm-text" style="left: 50%;">Analysis</div>
-                                <div class="rm-text" style="left: 75%;">Recommend</div>
+                                <div class="rm-text" style="left: 75%;">Recommendation</div>
                                 <div class="rm-text end" style="left: 100%;">Follow-up</div>
                             </div>
                         </div>
@@ -1026,9 +1217,9 @@
             </div>
         </section>
 
-        <!-- SLIDE 17: CLOSING -->
-        <section class="slide" id="slide-17">
-            <div class="slide-numeral">17</div>
+        <!-- SLIDE 18: CLOSING -->
+        <section class="slide" id="slide-18">
+            <div class="slide-numeral">18</div>
             <div class="slide-content" style="align-items: center; justify-content: center; text-align: center;">
                 <div class="anim-elem anim-delay-1" style="max-width: 900px; margin: 0 auto; transform: translateY(-2rem);">
                     <h1 class="slide-title" style="font-size: 4.5rem; line-height: 1.15; margin-bottom: 2rem; letter-spacing: -0.02em;">
